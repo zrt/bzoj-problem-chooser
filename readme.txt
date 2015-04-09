@@ -4,7 +4,7 @@ update:
 
 update: 
 2015/04/09
-修改readme.txt至uft-8。
+修改readme.txt至utf-8。
 修复了程序在O2编译下不稳定的Bug。
 
 bzoj
