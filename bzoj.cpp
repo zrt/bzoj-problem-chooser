@@ -1,9 +1,23 @@
-#include<cstdio>
-#include<cstring>
-#include<algorithm>
-#include<map>
-#include<cstdlib>
-#include<ctime>
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <map>
+#include <cstdlib>
+#include <ctime>
+#ifdef WIN32
+
+#include <windows.h>
+	inline void delay(unsigned long seconds ){
+		Sleep(ms);	
+	}
+
+#else /* presume POSIX */
+#include <unistd.h>
+	inline void delay( unsigned long ms ){
+		usleep( ms * 1000 );
+	}
+#endif
+
 using namespace std;
 void read_data(){
 	freopen("data.dat","r",stdin);
@@ -130,11 +144,11 @@ int main(){
 	srand((unsigned)(rand()*hard));
 	
 	puts("Ready?");
-	for(int i=0;i<=150000000;i++);
+	delay(1000);
 	puts("3");
-	for(int i=0;i<=150000000;i++);
+	delay(1000);
 	puts("2");
-	for(int i=0;i<=150000000;i++);
+	delay(1000);
 	puts("1");
 	
 	int id;
