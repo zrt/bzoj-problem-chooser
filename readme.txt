@@ -1,3 +1,7 @@
+update:
+2015/04/09
+更新data.dat文件，默认data.dat文件含权限题（如非权限狗可用data_novip.dat替换data.dat）。
+
 update: 
 2015/04/09
 修改readme.txt至uft-8。
