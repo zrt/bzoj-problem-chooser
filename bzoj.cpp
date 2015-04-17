@@ -7,7 +7,7 @@
 #ifdef WIN32
 
 #include <windows.h>
-	inline void delay(unsigned long seconds ){
+	inline void delay(unsigned long ms ){
 		Sleep(ms);	
 	}
 
